@@ -21,7 +21,7 @@
 /** 
 Variables compartidas a todos los hilos
 */
-int n = 0;
+int n;
 sem_t s, delay;
 
 /** 
@@ -50,7 +50,7 @@ void *producer(void *data) {
 }
 
 void *consumer(void *data) {
-  sem_wait(&delay);
+  sem_post(&delay);
   while(1) {
     sem_wait(&s);
     take();
