@@ -90,9 +90,9 @@ void produce() {
 }
 
 void append() {
-  out("[P] Agregando\n");
+  out("[P] \t Agregando\n");
   _wait(MAXAPPENDING);
-  out("[P] Agregado\n");
+  out("[P] \t Agregado\n");
 }
 
 void take() {
@@ -102,7 +102,7 @@ void take() {
 }
 
 void consume() {
-  out("[C] Consumiendo\n");
+  out("[C] \t Consumiendo\n");
   _wait(MAXCONSUMING);
-  out("[C] Consumido\n");
+  out("[C] \t Consumido\n");
 }
